@@ -1,0 +1,19 @@
+seed: 123
+data:
+  root: outputs/smoke/data
+output_dir: outputs/smoke/transmorph
+model:
+  in_channels: 2
+  embed_dim: 32
+  patch_size: 8
+  depth: 1
+  num_heads: 4
+  decoder_channels: 16
+training:
+  epochs: 1
+  batch_size: 2
+  learning_rate: 0.001
+  image_loss: mse
+  smooth_weight: 0.05
+  num_workers: 0
+

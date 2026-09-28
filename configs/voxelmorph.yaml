@@ -1,0 +1,15 @@
+seed: 7
+data:
+  root: data/synthetic
+output_dir: outputs/voxelmorph
+model:
+  in_channels: 2
+  base_channels: 16
+training:
+  epochs: 2
+  batch_size: 4
+  learning_rate: 0.001
+  image_loss: mse
+  smooth_weight: 0.05
+  num_workers: 0
+

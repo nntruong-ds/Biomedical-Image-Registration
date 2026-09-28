@@ -1,0 +1,2 @@
+"""Metaheuristic registration methods."""
+

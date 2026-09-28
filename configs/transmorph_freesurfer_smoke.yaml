@@ -1,0 +1,20 @@
+seed: 333
+device: cpu
+data:
+  root: data/oasis/freesurfer_3d_smoke
+output_dir: outputs/freesurfer_smoke/transmorph_train
+model:
+  dim: 3
+  in_channels: 2
+  embed_dim: 24
+  patch_size: 8
+  depth: 1
+  num_heads: 4
+  decoder_channels: 12
+training:
+  epochs: 1
+  batch_size: 1
+  learning_rate: 0.001
+  image_loss: mse
+  smooth_weight: 0.05
+  num_workers: 0

@@ -1,0 +1,15 @@
+seed: 123
+data:
+  root: outputs/smoke/data
+output_dir: outputs/smoke/voxelmorph
+model:
+  in_channels: 2
+  base_channels: 8
+training:
+  epochs: 1
+  batch_size: 2
+  learning_rate: 0.001
+  image_loss: mse
+  smooth_weight: 0.05
+  num_workers: 0
+
